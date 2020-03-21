@@ -1,5 +1,10 @@
 # Neural Machine Translation
 
+Inference methods:
+- Greedy search
+- Sampling
+- Beam search
+
 ## I. RNN seq2seq model
 
 ## II. RNN seq2seq model with Attention Mechanism
