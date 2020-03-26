@@ -3,7 +3,9 @@
 ## Requirements
 
 All required packages are located in requirements.txt file. To install them, just run the command below in your terminal.
+
 `$ pip install -r requirements.txt`
+
 I also recommend to use a GPU. This work is done Google Colab.
 
 ## I. Seq2Seq Model Baseline
