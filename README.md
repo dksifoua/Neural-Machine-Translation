@@ -1,17 +1,18 @@
 # Neural Machine Translation
 
-Inference methods:
-- Greedy search
-- Sampling
-- Beam search
+## Requirements
 
-## I. RNN seq2seq model
+All required packages are located in requirements.txt file. To install them, just run the command below in your terminal.
+`$ pip install -r requirements.txt`
+I also recommend to use a GPU. This work is done Google Colab.
 
-## II. RNN seq2seq model with Attention Mechanism
+## I. Seq2Seq Model Baseline
 
-## III. CNN seq2seq model
+## II. Seq2Seq Model with Attention Mechanisms
 
-## VI. Transformer seq2seq model
+## III. Convolutional Seq2Seq Model
+
+## VI. Transformer Model
 
 ## References
 - Sutskever, I., Vinyals, O. and Le, Q.V. (2014). Sequence to Sequence Learning with Neural Networks. [online] arXiv.org. Available at: https://arxiv.org/abs/1409.3215
