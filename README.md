@@ -10,6 +10,8 @@ I also recommend to use a GPU. This work is done Google Colab.
 
 ## I. Seq2Seq Model Baseline
 
+## I. Seq2Seq Model Baseline 2
+
 ## II. Seq2Seq Model with Attention Mechanisms
 
 ## III. Convolutional Seq2Seq Model
