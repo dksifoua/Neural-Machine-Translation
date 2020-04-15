@@ -8,15 +8,17 @@ All required packages are located in requirements.txt file. To install them, jus
 
 I also recommend to use a GPU. This work is done Google Colab.
 
-## I. Seq2Seq Model Baseline
+## 1. Seq2Seq Model with LSTM
 
-## I. Seq2Seq Model Baseline 2
+## 2. Seq2Seq Model with BiLSTM
 
-## II. Seq2Seq Model with Attention Mechanisms
+## 3. Seq2Seq Model with Luong Attention
 
-## III. Convolutional Seq2Seq Model
+## 4. Seq2Seq Model with Badhanau Attention
 
-## VI. Transformer Model
+## 5. Convolutional Seq2Seq Model
+
+## 6. Transformer Model
 
 ## References
 - Sutskever, I., Vinyals, O. & Le, Q. V. (2014). Sequence to Sequence Learning with Neural Networks.
