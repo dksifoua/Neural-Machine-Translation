@@ -1,24 +1,18 @@
 # Neural Machine Translation
 
-## Requirements
+```shell
+> ./add_dependencies.sh
+```
 
-All required packages are located in requirements.txt file. To install them, just run the command below in your terminal.
+- LSTM SeqToSeq
 
-`$ pip install -r requirements.txt`
+- LSTM SeqToSeq with Luong Attention
 
-I also recommend to use a GPU. This work is done Google Colab.
+- LSTM SeqToSeq with Badhanau Attention
 
-## 1. Seq2Seq Model with LSTM
+- Convolutional SeqToSeq
 
-## 2. Seq2Seq Model with BiLSTM
-
-## 3. Seq2Seq Model with Luong Attention
-
-## 4. Seq2Seq Model with Badhanau Attention
-
-## 5. Convolutional Seq2Seq Model
-
-## 6. Transformer Model
+- Transformer SeqToSeq
 
 ## References
 - Sutskever, I., Vinyals, O. & Le, Q. V. (2014). Sequence to Sequence Learning with Neural Networks.
