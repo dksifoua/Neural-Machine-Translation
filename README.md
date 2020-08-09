@@ -1,7 +1,7 @@
 # Neural Machine Translation
 
 ```shell
-> ./add_dependencies.sh
+> ./init.sh
 ```
 
 - LSTM SeqToSeq

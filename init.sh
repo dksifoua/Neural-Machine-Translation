@@ -4,6 +4,7 @@ python -m spacy download fr
 python -m spacy download en
 
 mkdir -p ./data
+mkdir -p ./checkpoint
 
 wget --no-check-certificate \
     http://www.statmt.org/europarl/v7/fr-en.tgz \

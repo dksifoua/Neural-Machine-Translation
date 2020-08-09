@@ -32,11 +32,21 @@ def adjust_lr(optimizer, shrink_factor, verbose=False):
     if verbose:
         print("The new learning rate is %f\n" % (optimizer.param_groups[0]['lr'],))
         
-def train_step(model, optimizer, criterion, loader, epoch, grad_clip, tf_ratio, device):
-    pass
-
-def validate(model, criterion, loader, epoch, device):
-    pass
-
-def train(model, optimizer, criterion, train_loader, valid_loader, field, n_epochs, grad_clip, tf_ratio, device):
-    pass
+def accuracy(outputs, target_sequences, k=5):
+    batch_size = outputs.size(1)
+    _, indices = outputs.topk(k, dim=1, largest=True, sorted=True)
+    correct = indices.eq(target_sequences.view(-1, 1).expand_as(indices))
+    correct_total = correct.view(-1).float().sum()  # 0D tensor
+    return correct_total.item() * (100.0 / batch_size)
+        
+def save_checkpoint(model, optimizer, data_name, epoch, last_improv, bleu4, is_best):
+    state = {
+        'epoch': epoch,
+        'bleu-4': bleu4,
+        'last_improv': last_improv,
+        'model': model.state_dict(),
+        'optimizer': optimizer.state_dict()
+    }
+    torch.save(state, './checkpoint/' + data_name + '.pt')
+    if is_best:
+        torch.save(state, './checkpoint/' + 'BEST_' + data_name + '.pt')
