@@ -1,5 +1,3 @@
-!#/bin/sh
-
 pip install torchtext --upgrade
 pip install spacy
 python -m spacy download fr
