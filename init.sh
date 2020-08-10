@@ -1,7 +1,10 @@
 pip install torchtext --upgrade
+
 pip install spacy
 python -m spacy download fr
 python -m spacy download en
+python -m spacy download fr_core_news_lg
+python -m spacy download en_core_web_lg
 
 mkdir -p ./data
 mkdir -p ./checkpoint
