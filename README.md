@@ -2,7 +2,6 @@
 
 ```shell
 > ./init.sh
-> python ./etl.py
 ```
 
 - LSTM SeqToSeq
