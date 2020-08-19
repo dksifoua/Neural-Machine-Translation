@@ -20,18 +20,17 @@ def clean_lines(lines):
     table = str.maketrans('', '', string.punctuation)
     for line in tqdm.tqdm(lines):
         # normalize unicode characters
-        line = normalize('NFD', line).encode('ascii', 'ignore')
+#         line = normalize('NFD', line)
+        line = line.encode('ascii', 'ignore')
         line = line.decode('UTF-8')
         # tokenize on white space
         line = line.split()
-        # convert to lower case
-        line = [word.lower() for word in line]
         # remove punctuation from each token
-        line = [word.translate(table) for word in line]
+#         line = [word.translate(table) for word in line]
         # remove non-printable chars form each token
         line = [re_print.sub('', w) for w in line]
         # remove tokens with numbers in them
-        line = [word for word in line if word.isalpha()]
+#         line = [word for word in line if word.isalpha()]
         # store as string
         cleaned.append(' '.join(line))
     return cleaned
