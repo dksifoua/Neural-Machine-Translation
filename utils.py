@@ -6,7 +6,7 @@ from unicodedata import normalize
 
 def read_file(filepath):
     try:
-        with open(filepath, mode='r') as file:
+        with open(filepath, mode='rb') as file:
             content = file.readlines()
         return content
     except:
@@ -16,23 +16,14 @@ def clean_lines(lines):
     cleaned = []
     # prepare regex for char filtering
     re_print = re.compile('[^%s]' % re.escape(string.printable))
-    # prepare translation table for removing punctuation
-    table = str.maketrans('', '', string.punctuation)
     for line in tqdm.tqdm(lines):
+        line = line.decode('utf-8', 'ignore')
+        line = line.strip()
         # normalize unicode characters
-#         line = normalize('NFD', line)
-        line = line.encode('ascii', 'ignore')
-        line = line.decode('UTF-8')
-        # tokenize on white space
-        line = line.split()
-        # remove punctuation from each token
-#         line = [word.translate(table) for word in line]
-        # remove non-printable chars form each token
-        line = [re_print.sub('', w) for w in line]
-        # remove tokens with numbers in them
-#         line = [word for word in line if word.isalpha()]
-        # store as string
-        cleaned.append(' '.join(line))
+        line = normalize('NFKD', line)
+        # Delete multiple spaces
+        line = re.sub(' +', ' ', line)
+        cleaned.append(line)
     return cleaned
 
 def save(data, filename):
