@@ -53,3 +53,17 @@ class AverageMeter:
         self.sum += value * n
         self.count += n
         self.average = self.sum / self.count
+        
+        
+class IteratorWrapper:
+    
+    def __init__(self, data_loader):
+        self.data_loader = data_loader
+        self.iterator = iter(data_loader)
+        
+    def __next__(self):
+        try:
+            return next(self.iterator)
+        except StopIteration:
+            self.iterator = iter(data_loader)
+            return next(self.iterator)
