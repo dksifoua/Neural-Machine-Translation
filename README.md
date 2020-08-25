@@ -36,8 +36,8 @@ In this project, I tried several sequence-to-sequence models with LSTMs, Attenti
 
 - Transformer
 
-| Model | Train loss | Valid loss | Train top-5 acc (%) | Test top-5 acc (%) | Time per epoch |
-|:------|:----------:|:----------:|:-------------------:|:------------------:|:--------------:|
+| Model | Train loss | Valid loss | Train top-5 acc (%) | Valid top-5 acc (%) | Time per epoch |
+|:------|:----------:|:----------:|:-------------------:|:-------------------:|:--------------:|
 | LSTM SeqToSeq | 2.641 | 3.043 | 10.105 | 9.466 | 04:53 |
 | LSTM SeqToSeq (Luong Attn) |  |  |  |  |  |
 | LSTM SeqToSeq (Badhanau Attn) |  |  |  |  |  |
