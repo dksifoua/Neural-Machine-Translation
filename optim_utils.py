@@ -29,7 +29,7 @@ class ExponentialLR(_LRScheduler):
         super(ExponentialLR, self).__init__(optimizer, last_epoch)
         
     def get_lr(self):
-        r = self.last_epoch / self.n_iters
+        r = self.last_epoch / (self.n_iters - 1)
         return [base_lr * (self.end_lr / base_lr)**r for base_lr in self.base_lrs]
     
     
@@ -193,15 +193,13 @@ class LRFinder:
         
         # Plot the suggested LR
         if suggest_lr:
-            # 'steepest': the point with steepest gradient (minimal gradient)
-            print("LR suggestion: steepest gradient")
             min_grad_idx = None
             try:
                 min_grad_idx = (np.gradient(np.array(losses))).argmin()
             except ValueError:
                 print("Failed to compute the gradients, there might not be enough points.")
             if min_grad_idx is not None:
-                print("Suggested LR: {:.2E}".format(lrs[min_grad_idx]))
+                print("Suggested LR (steepest gradient): {:.2E}".format(lrs[min_grad_idx]))
                 ax.scatter(
                     lrs[min_grad_idx],
                     losses[min_grad_idx],
