@@ -113,20 +113,7 @@ class LRFinder:
         
     def _train_batch(self, data):
         # Forward prop.
-        logits, sorted_dest_sequences, sorted_decode_lengths, sorted_indices = \
-            self.model(*data.src, *data.dest, tf_ratio=0.)
-        # Since we decoded starting with <sos>, the targets are all words after <sos>, up to <eos>
-        sorted_dest_sequences = sorted_dest_sequences[1:, :]
-        # Remove paddings
-        logits_copy = logits.clone()
-        logits = nn.utils.rnn.pack_padded_sequence(
-            logits,
-            sorted_decode_lengths
-        ).data
-        sorted_dest_sequences = nn.utils.rnn.pack_padded_sequence(
-            sorted_dest_sequences,
-            sorted_decode_lengths
-        ).data
+        logits, sorted_dest_sequences, _, _ = self.model(*data.src, *data.trg, tf_ratio=0.0)
         # Calculate loss
         loss = self.criterion(logits, sorted_dest_sequences)
         # Back prop.
