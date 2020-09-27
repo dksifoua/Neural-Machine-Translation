@@ -1,5 +1,9 @@
 # Neural Machine Translation
 
+## TODO
+
+- [ ] apply `tanh` activation to `init_h0`
+
 **Machine translation (MT)** is a sub-field of computational linguistics that investigates the use of software to translate a text from one natural language (such as French) to another (such as English). Solving this problem with artificial neural networks is often called **Neural Machine translation (NMT)**.
 
 ## Quick start
