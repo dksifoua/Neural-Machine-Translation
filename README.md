@@ -1,18 +1,8 @@
 # Neural Machine Translation
 
-## TODO
+**Machine translation (MT)** is a sub-field of computational linguistics that investigates the use of software to translate a text from one natural language to another. Solving this problem with artificial neural networks is often called **Neural Machine translation (NMT)**.
 
-- [ ] apply `tanh` activation to `init_h0`
-
-**Machine translation (MT)** is a sub-field of computational linguistics that investigates the use of software to translate a text from one natural language (such as French) to another (such as English). Solving this problem with artificial neural networks is often called **Neural Machine translation (NMT)**.
-
-## Quick start
-
-I used the `europarl-v7` parallel corpora to build models. The data is downloadable [here](http://www.statmt.org/europarl/v7/fr-en.tgz)!
-
-```shell
-> ./init.sh
-```
+In this project, I trained several sequence to sequence (seq2seq) models for Deutsch to English translation using PyTorch, TorchText and Spacy.
 
 ## Modeling
 
