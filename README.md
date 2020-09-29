@@ -18,13 +18,13 @@ In this project, I tried several sequence-to-sequence models with LSTMs, Attenti
 
 **Training results (`Train - Validation`)**
 
-| SeqToSeq Models      | Loss                   | Perplexity             | Top-5 accuracy (%)         |
-|:---------------------|:----------------------:|:----------------------:|:--------------------------:|
-|BiGRU                 | 2.051 - 2.561          | 7.779 - 12.952         | 12.365 - 11.633            |
-|BiGRU + Badhanau Attn | 2.258 - 2.356          | 9.567 - 10.554         | 11.998 - 11.911            |
-|BiGRU + Luong Attn    | **1.795 - 2.208**      | **6.019- 9.099**       | **13.200 - 12.372**        |
-|CONV2D + Dot Attn     |                        |                        |                            |
-|Transformer           |                        |                        |                            |
+| SeqToSeq Models       | Loss                   | Perplexity             | Top-5 accuracy (%)         |
+|:----------------------|:----------------------:|:----------------------:|:--------------------------:|
+| BiGRU                 | 2.051 - 2.561          | 7.779 - 12.952         | 12.365 - 11.633            |
+| BiGRU + Badhanau Attn | 2.258 - 2.356          | 9.567 - 10.554         | 11.998 - 11.911            |
+| BiGRU + Luong Attn    | **1.795 - 2.208**      | **6.019- 9.099**       | **13.200 - 12.372**        |
+| Convolution           |                        |                        |                            |
+| Transformer           |                        |                        |                            |
 
 **Evaluation results (`Validation - Test`)**
 
@@ -32,13 +32,13 @@ In this project, I tried several sequence-to-sequence models with LSTMs, Attenti
 
 - [ ] Add inference time
 
-| SeqToSeq Models      | `beam_size=1`       | `beam_size=3`       | `beam_size=5`       |
-|:---------------------|:-------------------:|:-------------------:|:-------------------:|
-|BiGRU                 | 20.742 - 21.143     | 21.212 - 22.840     | 22.081 - 22.797     |
-|BiGRU + Badhanau Attn | 24.894 - 24.983     | 25.701 - 26.597     | 25.770 - 26.105     |
-|BiGRU + Luong Attn    | **27.215 - 28.706** | **29.321 - 29.918** | **29.525 - 30.395** |
-|CONV2D + Dot Attn     |                     |                     |                     |
-|Transformer           |                     |                     |                     |
+| SeqToSeq Models       | `beam_size=1`       | `beam_size=3`       | `beam_size=5`       |
+|:----------------------|:-------------------:|:-------------------:|:-------------------:|
+| BiGRU                 | 20.742 - 21.143     | 21.212 - 22.840     | 22.081 - 22.797     |
+| BiGRU + Badhanau Attn | 24.894 - 24.983     | 25.701 - 26.597     | 25.770 - 26.105     |
+| BiGRU + Luong Attn    | **27.215 - 28.706** | **29.321 - 29.918** | **29.525 - 30.395** |
+| Convolution           |                     |                     |                     |
+| Transformer           |                     |                     |                     |
 
 # References
 
