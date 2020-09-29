@@ -42,3 +42,7 @@ In this project, I tried several sequence-to-sequence models with LSTMs, Attenti
 
 # References
 
+- Gehring, Jonas, et al. "Convolutional sequence to sequence learning." arXiv preprint arXiv:1705.03122 (2017).
+- Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems. 2017.
+
+
