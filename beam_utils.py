@@ -1,3 +1,15 @@
+def find_path(tree):
+    path = []
+    for nodes in reversed(tree):
+        if len(path) == 0:
+            path.append(nodes[0])
+        else:
+            parent_id = path[-1].parent_id
+            for node in nodes:
+                if node.id == parent_id:
+                    path.append(node)
+    return path
+
 def find_best_path(tree):
     best = []
     for nodes in reversed(tree):
