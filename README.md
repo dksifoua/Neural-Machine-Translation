@@ -18,13 +18,13 @@ In this project, I tried several sequence-to-sequence models with LSTMs, Attenti
 
 **Training results (`Train - Validation`)**
 
-| SeqToSeq Models       | Loss                   | Perplexity             | Top-5 accuracy (%)         |
-|:----------------------|:----------------------:|:----------------------:|:--------------------------:|
-| BiGRU                 | 2.051 - 2.561          | 7.779 - 12.952         | 12.365 - 11.633            |
-| BiGRU + Badhanau Attn | 2.258 - 2.356          | 9.567 - 10.554         | 11.998 - 11.911            |
-| BiGRU + Luong Attn    | **1.795 - 2.208**      | **6.019- 9.099**       | **13.200 - 12.372**        |
-| Convolution           |                        |                        |                            |
-| Transformer           |                        |                        |                            |
+| SeqToSeq Models       | Number of parameters   | Loss                   | Perplexity                 | Top-5 accuracy (%)         |
+|:----------------------|:----------------------:|:----------------------:|:--------------------------:|:--------------------------:|
+| BiGRU                 |                        | 2.051 - 2.561          | 7.779 - 12.952             | 12.365 - 11.633            |
+| BiGRU + Badhanau Attn |                        | 9.567 - 10.554         | 11.998 - 11.911            |                            |
+| BiGRU + Luong Attn    |                        | 6.019- 9.099           | 13.200 - 12.372            |                            |
+| Convolution           | 7,965,273              | 1.462 - 1.619          | 4.316 - 5.048              | 9.227 - 14.742             |
+| Transformer           |                        |                        |                            |                            |
 
 **Evaluation results (`Validation - Test`)**
 
