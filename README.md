@@ -18,35 +18,35 @@ In this project, I tried several sequence-to-sequence models with LSTMs, Attenti
 
 **Training results (`Train - Validation`)**
 
-| SeqToSeq Models          | Number of parameters   | Loss                   | Perplexity                 | Top-5 accuracy (%)         | Time per epoch         |
-|:-------------------------|:----------------------:|:----------------------:|:--------------------------:|:--------------------------:|:----------------------:|
-| 1. BiGRU                 | 8,501,115              | 2.051 - 2.561          | 7.779 - 12.952             | 12.365 - 11.633            |                        |
-| 2. BiGRU + Badhanau Attn | 9,091,711              | 2.258 - 2.356          | 9.567 - 10.554             | 11.998 - 11.911            | 00min:33s - 00min:00s  |
-| 3. BiGRU + Luong Attn    | 11,649,659             | 1.795 - 2.208          | 6.019- 9.099               | 13.200 - 12.372            | 00min:36s - 00min-00s  |
-| 4. Convolution           | 7,965,273              | 1.462 - 1.619          | 4.316 - 5.048              | 9.227 - 14.742             |                        |
-| 5. Transformer           |                        |                        |                            |                            |                        |
+| SeqToSeq Models     | Number of parameters   | Loss           | Perplexity       | Top-5 accuracy (%)  | Time per epoch         |
+|:--------------------|:----------------------:|:--------------:|:-----------------:|:------------------:|:----------------------:|
+| 1. BiGRU            | 8,501,115              | 2.051 - 2.561  | 7.779 - 12.952   | 12.365 - 11.633     |                        |
+| 2. BiGRU + Badhanau | 9,091,711              | 2.258 - 2.356  | 9.567 - 10.554   | 11.998 - 11.911     | 00min:33s - 00min:00s  |
+| 3. BiGRU + Luong    | 11,649,659             | 1.795 - 2.208  | 6.019- 9.099     | 13.200 - 12.372     | 00min:36s - 00min-00s  |
+| 4. Convolution      | 7,965,273              | 1.462 - 1.619  | 4.316 - 5.048    | 9.227 - 14.742      |                        |
+| 5. Transformer      |                        |                |                  |                     |                        |
 
 **Evaluation results (`Validation - Test`)**
 
 - BLEU score
 
-| SeqToSeq Models          | `beam_size=1`       | `beam_size=3`       | `beam_size=5`       |
-|:-------------------------|:-------------------:|:-------------------:|:-------------------:|
-| 1. BiGRU                 | 20.742 - 21.143     | 21.212 - 22.840     | 22.081 - 22.797     |
-| 2. BiGRU + Badhanau Attn | 24.894 - 24.983     | 25.701 - 26.597     | 25.770 - 26.105     |
-| 3. BiGRU + Luong Attn    | 27.215 - 28.706     | 29.321 - 29.918     | 29.525 - 30.395     |
-| 4. Convolution           |                     |                     |                     |
-| 5. Transformer           |                     |                     |                     |
+| SeqToSeq Models     | `beam_size=1`       | `beam_size=3`       | `beam_size=5`       |
+|:--------------------|:-------------------:|:-------------------:|:-------------------:|
+| 1. BiGRU            | 20.742 - 21.143     | 21.212 - 22.840     | 22.081 - 22.797     |
+| 2. BiGRU + Badhanau | 24.894 - 24.983     | 25.701 - 26.597     | 25.770 - 26.105     |
+| 3. BiGRU + Luong    | 27.215 - 28.706     | 29.321 - 29.918     | 29.525 - 30.395     |
+| 4. Convolution      |                     |                     |                     |
+| 5. Transformer      |                     |                     |                     |
 
 - Inference time
 
-| SeqToSeq Models          | `beam_size=1`         | `beam_size=3`         | `beam_size=5`         |
-|:-------------------------|:---------------------:|:---------------------:|:---------------------:|
-| 1. BiGRU                 | 00min:12s - 00min:12s | 01min:12s - 01min:10s | 02min:20s - 02min:27s |
-| 2. BiGRU + Badhanau Attn | 00min:17s- 00min:17s  | 01min:41s - 01min:38s | 03min:12s - 03min:06s |
-| 3. BiGRU + Luong Attn    | 00min:18s - 00min:18s | 01min:47s - 01min:44s | 03min:21s - 03min:17s |
-| 4. Convolution           |                       |                       |                       |
-| 5. Transformer           |                       |                       |                       |
+| SeqToSeq Models     | `beam_size=1`         | `beam_size=3`         | `beam_size=5`         |
+|:--------------------|:---------------------:|:---------------------:|:---------------------:|
+| 1. BiGRU            | 00min:12s - 00min:12s | 01min:12s - 01min:10s | 02min:20s - 02min:27s |
+| 2. BiGRU + Badhanau | 00min:17s- 00min:17s  | 01min:41s - 01min:38s | 03min:12s - 03min:06s |
+| 3. BiGRU + Luong    | 00min:18s - 00min:18s | 01min:47s - 01min:44s | 03min:21s - 03min:17s |
+| 4. Convolution      |                       |                       |                       |
+| 5. Transformer      |                       |                       |                       |
 
 # References
 
