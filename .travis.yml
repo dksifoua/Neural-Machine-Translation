@@ -1,0 +1,13 @@
+language: python
+
+cache: pip
+
+python: 3.7
+
+install:
+  - pip install -r requirements.txt
+  - pip install coverage
+
+script: coverage run -m unittest tests
+
+after_success: bash <(curl -s https://codecov.io/bash)
