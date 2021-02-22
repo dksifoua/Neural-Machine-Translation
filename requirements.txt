@@ -1,0 +1,25 @@
+atomicwrites==1.4.0
+attrs==20.3.0
+certifi==2020.12.5
+colorama==0.4.4
+importlib-metadata==3.4.0
+iniconfig==1.1.1
+mkl-fft==1.2.1
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy @ file:///C:/ci/numpy_and_numpy_base_1603468620949/work
+olefile==0.46
+packaging==20.9
+Pillow @ file:///C:/ci/pillow_1609786872067/work
+pluggy==0.13.1
+py==1.10.0
+pyparsing==2.4.7
+pytest==6.2.2
+six @ file:///C:/ci/six_1605205426665/work
+toml==0.10.2
+torch==1.7.1
+torchaudio==0.7.2
+torchvision==0.8.2
+typing-extensions @ file:///home/ktietz/src/ci_mi/typing_extensions_1612808209620/work
+wincertstore==0.2
+zipp==3.4.0
