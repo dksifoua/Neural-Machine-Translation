@@ -1,3 +1,4 @@
+from tests.layers.attention.badhanau_attention_layer_test import TestBadhanauAttentionLayer
 from tests.layers.encoder.encoder_gru_layer_test import TestEncoderBiGruLayer
 
-__all__ = [TestEncoderBiGruLayer]
+__all__ = [TestBadhanauAttentionLayer, TestEncoderBiGruLayer]
