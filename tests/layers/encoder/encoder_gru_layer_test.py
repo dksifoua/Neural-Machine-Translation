@@ -3,7 +3,7 @@ import numpy as np
 
 import torch
 
-from nmt.layers.encoders.encoder_gru_layer import EncoderBiGruLayer
+from nmt.layers.encoder.encoder_gru_layer import EncoderBiGruLayer
 
 
 class TestEncoderBiGruLayer(unittest.TestCase):
