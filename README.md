@@ -5,6 +5,15 @@
 
 # Neural Machine Translation
 
+# TODO
+- [] Sequence to Sequence Learning with Neural Networks
+- [] Neural Machine Translation by Jointly Learning to Align and Translate
+- [] Effective Approaches to Attention-based Neural Machine Translation
+- [] Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation
+- [] Convolutional sequence to sequence learning.
+- [] Attention is all you need.
+- [] The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation
+
 # References
 
 - [1] Sutskever, I., Vinyals, O., & Le, Q. V. (2014). Sequence to sequence learning with neural networks. In Advances in neural information processing systems (pp. 3104-3112).
