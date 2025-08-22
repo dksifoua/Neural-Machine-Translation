@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.com/dksifoua/Neural-Machine-Translation.svg?branch=master)](https://travis-ci.com/dksifoua/Neural-Machine-Translation.svg?branch=master)
-[![master](https://codecov.io/gh/dksifoua/Neural-Machine-Translation/branch/master/graph/badge.svg)](https://codecov.io/gh/dksifoua/Neural-Machine-Translation)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=flat)](https://github.com/dksifoua/Neural-Machine-Translation/issues)
+# The State of the Art in Neural Machine Translation
 
-# Neural Machine Translation
+## Abstract
+Neural Machine Translation (NMT) has rapidly evolved to become the predominant approach in automated translation, offering a powerful end-to-end learning paradigm that has largely surpassed traditional phrase-based systems. This paper outlines the significant advancements in NMT, tracing its progression from initial encoder-decoder architectures with recurrent neural networks (RNNs) to sophisticated models leveraging attention mechanisms, convolutional neural networks, and self-attention. Key milestones include the introduction of attention to overcome fixed-length vector bottlenecks, the development of deep LSTM networks with techniques for production-scale deployment like Google's NMT (GNMT), the exploration of fully convolutional architectures (ConvS2S) for improved parallelization, and the transformative "Transformer" model, which relies entirely on attention. Recent work further enhances performance by identifying and combining effective modeling and training techniques from these diverse architectures into hybrid models. Despite achieving human-level quality in some contexts, challenges remain, particularly concerning robust rare word handling and deeper linguistic understanding.
 
 # TODO
 - [] Sequence to Sequence Learning with Neural Networks
